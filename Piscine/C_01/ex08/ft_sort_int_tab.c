@@ -41,7 +41,7 @@ void	ft_sort_int_tab(int *str, int size)
 		i++;
 	}
 }
-
+/*
 int	main(void)
 {
 	int	a[] = {6, 5, 2, 4, 1, 3, 8, 7};
@@ -49,4 +49,4 @@ int	main(void)
 
 	ft_sort_int_tab(a, size);
 }
-
+*/
