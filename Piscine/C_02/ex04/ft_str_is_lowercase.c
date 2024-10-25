@@ -20,16 +20,15 @@ int	ft_str_is_lowercase(char *str)
 	}
 	return (1);
 }
-
-
+/*
 #include <stdio.h>
 
 int main()
 {
 	char *str = "iav";
-	 if (ft_str_is_lowercase(str) == 1)
+	if (ft_str_is_lowercase(str) == 1)
 		printf("1\n");
 	else
 		printf("0\n");
 }
-
+*/

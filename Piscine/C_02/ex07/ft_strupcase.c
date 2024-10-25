@@ -25,7 +25,7 @@ char	*ft_strupcase(char *str)
 	}
 	return (set);
 }
-
+/*
 #include <stdio.h>
 
 int main()
@@ -35,4 +35,4 @@ int main()
 	printf("%s\n", ft_strupcase(str));
 	return (0);
 }
-
+*/

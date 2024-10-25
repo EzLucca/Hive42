@@ -21,7 +21,7 @@ int	ft_str_is_numeric(char *str)
 	return (1);
 }
 
-
+/*
 #include <stdio.h>
 
 int main()
@@ -32,4 +32,4 @@ int main()
 	else
 		printf("0\n");
 }
-
+*/

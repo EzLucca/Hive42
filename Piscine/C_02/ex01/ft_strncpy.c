@@ -22,7 +22,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
-
+/*
 #include <stdio.h>
 
 int main()
@@ -35,4 +35,4 @@ int main()
 	ft_strncpy(destin, origin, 5);
 	printf(" %s\n",destin);
 }
-
+*/

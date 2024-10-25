@@ -36,15 +36,15 @@ char	*ft_strcapitalize(char *str)
 	}
 	return (final);
 }
-/*
+
 #include <stdio.h>
 
 int main()
 {
-char	str[];
-str = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
+    char	str[];
+    str = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
 
-printf("%s\n", ft_strcapitalize(str));
-return (0);
+    printf("%s\n", ft_strcapitalize(str));
+    return (0);
 }
-*/
+

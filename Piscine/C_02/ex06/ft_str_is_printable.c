@@ -20,15 +20,15 @@ int	ft_str_is_printable(char *str)
 	}
 	return (1);
 }
-
+/*
 #include <stdio.h>
 
 int main()
 {
 	char str[] = {49, 106, 87};
-	 if (ft_str_is_printable(str) == 1)
+	if (ft_str_is_printable(str) == 1)
 		printf("1\n");
 	else
 		printf("0\n");
 }
-
+*/
