@@ -14,7 +14,7 @@
 - isprint       | (ok)
 - memset        | (ok)
 - bzero         | (ok)
-- memcpy        |
+- memcpy        | (ok)
 - memmove       |
 - strlcpy       |
 - strlcat       |
