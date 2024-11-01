@@ -15,7 +15,7 @@
 - memset        | (ok)
 - bzero         | (ok)
 - memcpy        | (ok)
-- memmove       |
+- memmove       | (ok)
 - strlcpy       |
 - strlcat       |
 - toupper       |
