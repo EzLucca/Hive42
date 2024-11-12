@@ -17,9 +17,9 @@
 - memcpy        | (ok)
 - memmove       | (ok)
 - strlcpy       | (ok)
-- strlcat       |
-- toupper       |
-- tolower       |
+- strlcat       | (ok)
+- toupper       | (ok)
+- tolower       | (ok)
 - strchr        |
 - strrchr       |
 - memchr        |
