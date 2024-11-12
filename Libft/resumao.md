@@ -16,7 +16,7 @@
 - bzero         | (ok)
 - memcpy        | (ok)
 - memmove       | (ok)
-- strlcpy       |
+- strlcpy       | (ok)
 - strlcat       |
 - toupper       |
 - tolower       |
