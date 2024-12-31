@@ -1,3 +1,5 @@
+#include "libft.h"
+
 void    *ft_memcpy(void *dst, const void *src, size_t n)
 {
     /* declare a temporary pointer for dst */
