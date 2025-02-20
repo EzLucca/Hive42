@@ -13,35 +13,36 @@
 #include <unistd.h>
 #include <stdio.h>
 
-void	ft_rev_int_tab(int *str, int size)
+void	ft_rev_int_tab(int *tab, int size)
 {
 	int	i;
 	int	temp;
-	int array[size];
 
 	i = 0;
 	while (i < size/2)
 	{
-		temp = str[i];
-		str[i] = str[size - 1- i];
-		str[size - 1 - i] = temp;
-		i++;
-	}
-	i = 0;
-	while (i < size)
-	{
-		array[i] = str[i];
-		printf("%d", array[i]);	
+		temp = tab[i];
+		tab[i] = tab[size - 1- i];
+		tab[size - 1 - i] = temp;
 		i++;
 	}
 }
 
 int	main(void)
 {
-	int	a[] = {1, 2, 3, 4, 5, 6, 7, 8};
-	int	size = 8;
+	int	a[] = {1, 2, 3, 4, 5, 6, 7};
+	int	size = 7;
+	int	i;
 
 	ft_rev_int_tab(a, size);
-//	printf("%d", ft_rev_int_tab(a, size));
+
+	i = 0;
+	while (i < size)
+	{
+		printf("%d", a[i]);	
+		i++;
+	}
+    printf("\n");
+    return(0);
 }
 

@@ -13,40 +13,43 @@
 #include <unistd.h>
 #include <stdio.h>
 
-void	ft_sort_int_tab(int *str, int size)
+void	ft_sort_int_tab(int *tab, int size)
 {
 	int	i;
-	int j;
 	int	temp;
-	int array[size];
+
+    if (!tab || size <2)
+        return ;
 
 	i = 0;
-	while (i < size)
+	while (i < size -1)
 	{
-		j = i;
-		while ((str[j] < str[j - 1]) && j > 0)
+        if (tab[i] > tab[i + 1])
 		{
-			temp = str[j];
-			str[j] = str[j - 1];
-			str[j - 1] = temp;
-			j--;
+			temp = tab[i];
+			tab[i] = tab[i + 1];
+			tab[i + 1] = temp;
+            i = 0;
 		}
-		i++;
-	}
-	i = 0;
-	while (i < size)
-	{
-		array[i] = str[i];
-		printf("%d", array[i]);	
-		i++;
+        else
+		    i++;
 	}
 }
-/*
+
 int	main(void)
 {
 	int	a[] = {6, 5, 2, 4, 1, 3, 8, 7};
 	int	size = 8;
+    int i;
 
 	ft_sort_int_tab(a, size);
+
+	i = 0;
+	while (i < size)
+	{
+		printf("%d", a[i]);	
+		i++;
+	}
+	printf("\n");	
 }
-*/
+
