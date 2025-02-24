@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
+
 char	*ft_strcpy(char *dest, char *src)
 {
 	while (*src)
@@ -18,19 +20,21 @@ char	*ft_strcpy(char *dest, char *src)
 		dest++;
 		src++;
 	}
+    *dest = '\0';
 	return (dest);
 }
-/*
+
 #include <stdio.h>
 
 int main()
 {
 	char	*string;
 	char	destin[50];
+	char	destin2[50];
 
 	string = "beijaflor";
-	printf("%s\n",destin);
 	ft_strcpy(destin, string);
 	printf("%s\n",destin);
+    strcpy(destin2, string);
+	printf("%s\n",destin2);
 }
-*/

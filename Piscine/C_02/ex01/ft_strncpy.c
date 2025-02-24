@@ -10,29 +10,38 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+#include <string.h>
+
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int	i;
 
 	i = 0;
-	while (*src && i <= n)
+	while (src[i] && i < n)
 	{
 		dest[i] = src[i];
 		i++;
 	}
+    while (i < n)
+    {
+        dest[i] = '\0';
+        i++;
+    }
 	return (dest);
 }
-/*
-#include <stdio.h>
 
 int main()
 {
 	char	*origin; 
 	char	destin[50]; 
+	char	destin2[50]; 
 
 	origin = "sol";
-	printf(" %s\n",destin);
 	ft_strncpy(destin, origin, 5);
 	printf(" %s\n",destin);
+	strncpy(destin2, origin, 5);
+	printf(" %s\n",destin2);
+
 }
-*/
+

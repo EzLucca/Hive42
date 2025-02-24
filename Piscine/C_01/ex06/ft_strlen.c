@@ -10,24 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char ft_strlen(char *str)
-{
-	int	p;
+char ft_strlen(char *str) {
+  int p;
 
-	p = 0;
-	while (str[p])
-		p++;
-	return (p);
+  p = 0;
+  while (str[p])
+    p++;
+  return (p);
 }
 /*
-#include <unistd.h>
 #include <stdio.h>
+#include <unistd.h>
 
 int main()
 {
-	char	*string1;
-	string1 = "Exame today";
+        char	*string1;
+        string1 = "Exame today";
 
-	printf("%d\n", ft_strlen(string1));
+        printf("%d\n", ft_strlen(string1));
 }
 */

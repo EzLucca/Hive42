@@ -14,21 +14,20 @@ int	ft_str_is_printable(char *str)
 {
 	while (*str)
 	{
-		if (!((*str >= 32 && *str <= 127)))
+		if (!((*str >= 32 && *str <= 126)))
 			return (0);
 		str++;
 	}
 	return (1);
 }
-/*
+
 #include <stdio.h>
 
 int main()
 {
-	char str[] = {49, 106, 87};
+	char str[] = "O A na finlandia e Ä";
 	if (ft_str_is_printable(str) == 1)
 		printf("1\n");
 	else
 		printf("0\n");
 }
-*/
