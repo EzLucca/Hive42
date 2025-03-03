@@ -23,7 +23,7 @@ int	ft_atoi(char *str)
 	return (ret);
 }
 
-void ft_putnbr_base(int nbr, char *base);
+void ft_putnbr_base(int nbr, char *base)
 {
 	int baseValue;
 
@@ -47,7 +47,7 @@ int main()
 	int	n;
 	char	*base;
 
-	n = ft_atoi(argv[1];
+	n = ft_atoi(argv[1]);
 	base = argv[2];
 	ft_putnbr_base(n, base);
 }
